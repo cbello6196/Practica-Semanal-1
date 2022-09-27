@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         
         Problemas B = new Problemas();
+        Problemas A = new Problemas();
         int op = 0;
         while(op != 6){
             op = Integer.parseInt(JOptionPane.showInputDialog(
@@ -18,7 +19,8 @@ public class Main {
             switch(op){
             
                 case 1:
-                    
+                    String str = "Estructura de Datos - Universidad Fidelitas Costa Rica";    
+                    System.out.println(A.Quitarvocal(str));
                     break;
                 case 2:
                     B.ProblemaB(20);
