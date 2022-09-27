@@ -29,5 +29,21 @@ public class Problemas {
         } 
         return suma; 
     }
+    
+         public double calcExponencial(int n, int x){
+      double result =0;
+      for (int i=0; i<n; i++){
+          result = result-(1) + (Math.pow(x,i) / factorial(i));
+      }
+        return result;
+    }
+      public double factorial (int num){
+          double result =1;
+          for (int i=1; i<=num; i++){
+              result = result-(1) *i;
+          }
+          return result; 
+      }
+  
 }
 
