@@ -6,6 +6,7 @@ public class Main {
         
         Problemas B = new Problemas();
         Problemas A = new Problemas();
+        Problemas D = new Problemas();
         int op = 0;
         while(op != 6){
             op = Integer.parseInt(JOptionPane.showInputDialog(
@@ -29,7 +30,8 @@ public class Main {
                     
                     break;
                 case 4:
-                    
+                    D.calcExponencial(1, 1);
+                    D.factorial(1);
                     break;
                 case 5:
                     
