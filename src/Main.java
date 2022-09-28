@@ -7,7 +7,7 @@ public class Main {
         
         Problemas A = new Problemas();
         Problemas B = new Problemas();
-        
+        Problemas C = new Problemas(); 
         Problemas D = new Problemas();
         Problemas E = new Problemas();
         int op = 0;
@@ -30,7 +30,10 @@ public class Main {
                     B.ProblemaB(20);
                     break;
                 case 3:
-
+                    int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero a verificar"));
+                    if (C.ProblemaC(numero))
+                            System.out.println("El numero es binario");
+                    else System.out.println("El numero no es binario");
                     break;
                 case 4:
                     D.calcExponencial(1, 1);
