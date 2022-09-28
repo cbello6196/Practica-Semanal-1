@@ -56,6 +56,17 @@ public class Problemas {
            System.out.printf("Resultado del calculo factorial sin recursividad:" + result2+"\n"+"Resultado del calculo factorial con recursivada:"+ result1);
           return result1; 
       }
+       
+
+    public int ProblemaE(int num) {
+        if (num<2) {
+            return num;
+        } else {
+            int numeros = num % 2 + ProblemaE(num / 2)*10;
+            return numeros;
+        }
+
+    }
   
 }
 
