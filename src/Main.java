@@ -5,9 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
         
-        //Se instancian 
+        //Se instancian los problemas
         
         Problemas p = new Problemas();
+        
+        // Se crea el menú para llamar los diferentes problemas
         
         int op = 0;
         while (op != 6) {
@@ -35,8 +37,8 @@ public class Main {
                     else System.out.println("El numero no es binario");
                     break;
                 case 4:
-                    p.calcExponencial(1, 1);
-                    p.factorial(1);
+                    p.calcExponencial(20, 10);
+                    p.factorial(50);
                     break;
                 case 5:
                     int num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero a convertir "));
