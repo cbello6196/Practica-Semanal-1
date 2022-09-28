@@ -31,18 +31,30 @@ public class Problemas {
     }
     
          public double calcExponencial(int n, int x){
-      double result =0;
+      double result1 =0;
+      double result2=0;
       for (int i=0; i<n; i++){
-          result = result-(1) + (Math.pow(x,i) / factorial(i));
+          result1 = result1-(1) + (Math.pow(x,i) / factorial(i));
       }
-        return result;
+     
+      
+       for (int i=0; i<n; i++){
+          result2 = result2 + (Math.pow(x,i) / factorial(i));
+      }
+        System.out.printf("Resultado del calculo exponencial sin recursividad:" + result2+"\n"+"Resultado del calculo exponencial con recursivada:"+ result1);
+        return result1;
     }
       public double factorial (int num){
-          double result =1;
+           double result1 =0;
+           double result2=0;
           for (int i=1; i<=num; i++){
-              result = result-(1) *i;
+              result1 = result1-(1) *i;
           }
-          return result; 
+           for (int i=1; i<=num; i++){
+              result2 = result2 *i;
+          }
+           System.out.printf("Resultado del calculo factorial sin recursividad:" + result2+"\n"+"Resultado del calculo factorial con recursivada:"+ result1);
+          return result1; 
       }
   
 }
