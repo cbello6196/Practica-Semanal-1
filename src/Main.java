@@ -4,9 +4,10 @@ import javax.swing.JOptionPane;
 public class Main {
 
     public static void main(String[] args) {
-
-        Problemas B = new Problemas();
+        
         Problemas A = new Problemas();
+        Problemas B = new Problemas();
+        
         Problemas D = new Problemas();
         Problemas E = new Problemas();
         int op = 0;
