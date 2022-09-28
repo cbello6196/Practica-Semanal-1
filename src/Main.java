@@ -5,11 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Problemas A = new Problemas();
-        Problemas B = new Problemas();
-        Problemas C = new Problemas(); 
-        Problemas D = new Problemas();
-        Problemas E = new Problemas();
+        //Se instancian 
+        
+        Problemas p = new Problemas();
+        
         int op = 0;
         while (op != 6) {
             op = Integer.parseInt(JOptionPane.showInputDialog(
@@ -24,25 +23,25 @@ public class Main {
 
                 case 1:
                     String str = "Estructura de Datos - Universidad Fidelitas Costa Rica";
-                    System.out.println(A.Quitarvocal(str));
+                    System.out.println(p.Quitarvocal(str));
                     break;
                 case 2:
-                    B.ProblemaB(20);
+                    p.ProblemaB(20);
                     break;
                 case 3:
                     int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero a verificar"));
-                    if (C.ProblemaC(numero))
+                    if (p.ProblemaC(numero))
                             System.out.println("El numero es binario");
                     else System.out.println("El numero no es binario");
                     break;
                 case 4:
-                    D.calcExponencial(1, 1);
-                    D.factorial(1);
+                    p.calcExponencial(1, 1);
+                    p.factorial(1);
                     break;
                 case 5:
                     int num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero a convertir "));
 
-                    int numeros = E.ProblemaE(num);
+                    int numeros = p.ProblemaE(num);
                     JOptionPane.showMessageDialog(null, "El resultado es:\n "
                             + numeros);
                     break;
