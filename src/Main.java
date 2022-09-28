@@ -14,7 +14,7 @@ public class Main {
         int op = 0;
         while (op != 6) {
             op = Integer.parseInt(JOptionPane.showInputDialog(
-                    "Escoga el problema:\n"
+                    "Escoja el problema:\n"
                     + "1. vocales\n"
                     + "2. números\n"
                     + "3. binario\n"
@@ -37,8 +37,8 @@ public class Main {
                     else System.out.println("El numero no es binario");
                     break;
                 case 4:
-                    p.calcExponencial(20, 10);
-                    p.factorial(50);
+                    p.calcExponencial(2, 10);
+                    p.factorial(1);
                     break;
                 case 5:
                     int num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero a convertir "));
