@@ -115,4 +115,46 @@ public class Pila {
         }
     
 }
+        public void revisar (int reference){
+            
+            Node aux = cima;
+            
+             if (search(reference)) {
+          
+            Node cimapPilaAux = null;
+           
+            while(reference != cima.getValor()){
+                Node temp = new Node();
+               
+                temp.setValor(cima.getValor());
+               
+                if(cimapPilaAux == null){
+                   
+                    cimapPilaAux = temp;
+                }
+                
+                else{
+                    temp.setSiguiente(cimapPilaAux);
+                    cimapPilaAux = temp;
+                }
+              
+                pop();
+            }
+           
+            pop();
+           
+            while(cimapPilaAux != null){
+               
+                push(cimapPilaAux.getValor());
+               
+                cimapPilaAux = cimapPilaAux.getSiguiente();
+            }
+          
+            cimapPilaAux = null;
+        }
+        else{
+            System.out.println("El nodo indicado no existe");
+        }
+            
+        }
 }
