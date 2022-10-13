@@ -12,12 +12,15 @@ package Problema2;
 public class Node {
     private int valor;
     private Node siguiente;
-    
+    private double idDocumento;
+    private int paginas;
   
 
     public Node() {
         this.valor = 0;
         this.siguiente = null;
+        this.idDocumento =0;
+        this.paginas =0;
     }
 
     public int getValor() {
@@ -35,4 +38,21 @@ public class Node {
     public void setSiguiente(Node siguiente) {
         this.siguiente = siguiente;
     }
+
+    public double getIdDocumento() {
+        return idDocumento;
+    }
+
+    public void setIdDocumento(double idDocumento) {
+        this.idDocumento = idDocumento;
+    }
+
+    public int getPaginas() {
+        return paginas;
+    }
+
+    public void setPaginas(int paginas) {
+        this.paginas = paginas;
+    }
+
 }

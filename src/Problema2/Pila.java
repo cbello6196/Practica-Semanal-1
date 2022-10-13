@@ -64,7 +64,7 @@ public class Pila {
        
         return exist;
     }
-    
+     
         public void popModificado(int reference){
        
         if (search(reference)) {
