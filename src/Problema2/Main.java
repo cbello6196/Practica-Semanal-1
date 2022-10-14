@@ -39,7 +39,9 @@ public class Main {
         System.out.println("PILA DESPUES DE UN DELETE A LA REFERENCIA 89");
         miPila.listar();
         
+        miPila.asignardidDoc();
         
+       
     }
     
 }

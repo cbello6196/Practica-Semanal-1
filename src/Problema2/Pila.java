@@ -157,4 +157,21 @@ public class Pila {
         }
             
         }
+        public void asignardidDoc (){
+            
+            int array[] = {10,52,32,56,23,10,19,33,55,28,45,96,85,41,12,18,20};
+            int i=0;
+            
+            for (i=0;i<array.length;i++)
+                
+                if(array.length<=30)
+                    System.out.print("El documento es normal");
+                else{
+                    System.out.print("El documento es confidencial");
+        {
+            
+                    
+        }
+}
+        }
 }
